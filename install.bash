@@ -5,9 +5,9 @@ cd "$(dirname "$0")"
 PACQUET_HOME="$(pwd)/pacquet-home"
 export PACQUET_HOME
 export TRACE='pacquet::fetch=info'
-export PATH="$HOME/programming/pacquet/target/release:$PATH"
+export PATH="$HOME/programming/pacquet/target/debug:$PATH"
 
-pretty-exec -- run-at "$HOME/programming/pacquet" cargo build --release
+pretty-exec -- run-at "$HOME/programming/pacquet" cargo build
 pretty-exec -- rm -rf pacquet-home node_modules pacquet-lock.yaml
 pretty-exec -- which pacquet
 pretty-exec -- pacquet install

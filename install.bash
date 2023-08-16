@@ -5,7 +5,7 @@ cd "$(dirname "$0")"
 PACQUET_HOME="$(pwd)/pacquet-home"
 export PACQUET_HOME
 
-export TRACE='*'
+export TRACE='pacquet::fetch=info'
 
 export PATH="$HOME/programming/pacquet/target/release:$PATH"
 

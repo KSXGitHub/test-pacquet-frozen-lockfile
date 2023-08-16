@@ -9,6 +9,6 @@ export TRACE='*'
 
 export PATH="$HOME/programming/pacquet/target/release:$PATH"
 
-pretty-exec -- rm -rf "$PACQUET_HOME"
+pretty-exec -- rm -rf pacquet-home node_modules pacquet-lock.yaml
 
 pretty-exec -- which pacquet

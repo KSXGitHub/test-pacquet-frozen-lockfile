@@ -5,6 +5,7 @@ cd "$(dirname "$0")"
 PACQUET_HOME="$(pwd)/pacquet-home"
 export PACQUET_HOME
 export TRACE='pacquet::fetch=info'
+export RUST_BACKTRACE=1
 export PATH="$HOME/programming/pacquet/target/debug:$PATH"
 
 pretty-exec -- run-at "$HOME/programming/pacquet" cargo build

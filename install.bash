@@ -4,7 +4,6 @@ cd "$(dirname "$0")"
 
 PACQUET_HOME=$(pwd)/pacquet-home
 export PACQUET_HOME
-export TRACE=${TRACE:-pacquet=info}
 export RUST_BACKTRACE=1
 export PATH=$HOME/programming/pacquet/target/debug:$PATH
 

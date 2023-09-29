@@ -1,4 +1,4 @@
 node_modules
 /pacquet-home
-pacquet-lock.yaml
+/pnpm-home
 !pnpm-lock.yaml

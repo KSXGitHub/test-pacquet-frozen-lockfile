@@ -8,4 +8,4 @@ export PNPM_HOME
 pretty-exec -- rm -rf pnpm-home node_modules
 pretty-exec -- which pnpm
 pretty-exec -- pnpm -v
-pretty-exec -- bash -c 'time pnpm install --frozen-lockfile'
+pretty-exec -- bash -c 'time pnpm install --frozen-lockfile --ignore-scripts'

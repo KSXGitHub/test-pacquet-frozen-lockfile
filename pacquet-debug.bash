@@ -10,6 +10,6 @@ export RUST_BACKTRACE=1
 export PATH=$HOME/programming/pacquet/target/debug:$PATH
 
 pretty-exec -- run-at "$HOME/programming/pacquet" cargo build
-pretty-exec -- rm -rf pacquet-home node_modules
+pretty-exec -- rm -rf pacquet-home pnpm-home node_modules
 pretty-exec -- which pacquet
 pretty-exec -- bash -c 'time pacquet install --frozen-lockfile'

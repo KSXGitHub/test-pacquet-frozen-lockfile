@@ -1,4 +1,5 @@
 node_modules
 /pacquet-home
 /pnpm-home
+/pnpm-cache
 !pnpm-lock.yaml

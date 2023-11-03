@@ -1,7 +1,7 @@
 lockfileVersion: '6.0'
 
 settings:
-  autoInstallPeers: true
+  autoInstallPeers: false
   excludeLinksFromLockfile: false
 
 dependencies:
@@ -58,7 +58,7 @@ dependencies:
     version: 5.2.2
   verdaccio:
     specifier: 5.27.0
-    version: 5.27.0(typanion@3.14.0)
+    version: 5.27.0
   yaml:
     specifier: 2.3.4
     version: 2.3.4
@@ -1463,10 +1463,8 @@ packages:
     resolution: {integrity: sha512-0TNiGstbQmCFwt4akjjBg5pLRTSyj/PkWQ1ZoO2zntmg9yLqSRxwEa4iCfQLGjqhiqBfOJa7W/E8wfGrTDmlZQ==}
     dev: false
 
-  /clipanion@3.2.1(typanion@3.14.0):
+  /clipanion@3.2.1:
     resolution: {integrity: sha512-dYFdjLb7y1ajfxQopN05mylEpK9ZX0sO1/RfMXdfmwjlIsPkbh4p7A682x++zFPLDCo1x3p82dtljHf5cW2LKA==}
-    peerDependencies:
-      typanion: '*'
     dependencies:
       typanion: 3.14.0
     dev: false
@@ -4116,7 +4114,7 @@ packages:
       - supports-color
     dev: false
 
-  /verdaccio@5.27.0(typanion@3.14.0):
+  /verdaccio@5.27.0:
     resolution: {integrity: sha512-S0XCNgy+s8O3+Prm1uYMYR58WbvsnhUgAm6qk64suZs0YyBrTh/YJSRLYgsjAIiIpO/c2gnvNaDwz2EcX/C7nQ==}
     engines: {node: '>=12.18'}
     hasBin: true
@@ -4135,7 +4133,7 @@ packages:
       '@verdaccio/utils': 7.0.0-next.3
       JSONStream: 1.3.5
       async: 3.2.4
-      clipanion: 3.2.1(typanion@3.14.0)
+      clipanion: 3.2.1
       compression: 1.7.4
       cookies: 0.8.0
       cors: 2.8.5
@@ -4162,7 +4160,6 @@ packages:
     transitivePeerDependencies:
       - encoding
       - supports-color
-      - typanion
     dev: false
 
   /verror@1.10.0:
